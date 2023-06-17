@@ -1,37 +1,37 @@
-import React from 'react';
+import React from "react";
 
 function AboutPage(props) {
-    return (
-        <>
-<section>
-  <div
-    class="mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8"
-  >
-    <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
-      <div
-        class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full"
-      >
-        <img
-          alt="Party"
-          src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-          class="absolute inset-0 h-full w-full object-cover"
-        />
-      </div>
+  return (
+    <>
+      <section>
+        <div class="mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
+          <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
+            <div class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
+              <img
+                alt=""
+                src={""}
+                className="BannerContactIMG bg-gray-400 w-full object-cover h-[calc(100%)] lg:self-end lg:rounded-tl-[150px] lg:rounded-br-[150px]"
+              />
+            </div>
 
-      <div class="lg:py-24">
-        <h2 class="text-3xl font-bold sm:text-4xl">Grow your audience</h2>
+            <div class="lg:py-24">
+              <h2 class="text-3xl font-bold sm:text-4xl">
+                Welcome to Tiger’s Taekwondo Omega!
+              </h2>
 
-        <p class="mt-4 text-gray-600">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut qui hic
-          atque tenetur quis eius quos ea neque sunt, accusantium soluta minus
-          veniam tempora deserunt? Molestiae eius quidem quam repellat.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>   
-</>
-    );
+              <p className="mt-4 text-gray-600">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Repellat eligendi corrupti iure commodi, necessitatibus
+                praesentium expedita recusandae doloribus, amet laudantium
+                minima nisi rerum temporibus eveniet ullam dignissimos facilis
+                mollitia? Rem.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
 }
 
 export default AboutPage;
