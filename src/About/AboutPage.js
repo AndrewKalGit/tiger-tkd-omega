@@ -24,7 +24,7 @@ function AboutPage(props) {
                 Repellat eligendi corrupti iure commodi, necessitatibus
                 praesentium expedita recusandae doloribus, amet laudantium
                 minima nisi rerum temporibus eveniet ullam dignissimos facilis
-                mollitia? Rem.
+                mollitia? Rem lorem.
               </p>
             </div>
           </div>
