@@ -1,24 +1,54 @@
-import logo from './logo.svg';
+import { Route, Routes, BrowserRouter } from 'react-router-dom';
+
+import AboutPage from './About/AboutPage';
+import ContactPage from './Contact/ContactPage';
+import ContactUsBanner from './Landing/ContactUsBanner';
+import CTABanner from './Landing/CTABanner';
+import OurInstructors from './Landing/OurInstructors';
+import Testimonial from './Landing/Testimonial';
+import Schedule from './Schedule/Schedule';
+import Footer from './Footer';
+import Nav from './Nav';
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+        <Nav></Nav>
+        <Routes>
+          <Route 
+            element={<>
+            <CTABanner></CTABanner>
+            <ContactUsBanner></ContactUsBanner>
+            <OurInstructors></OurInstructors>
+            <Testimonial></Testimonial>
+            </>} 
+            path='/'>
+          </Route>
+          <Route 
+            element={<>
+            <AboutPage></AboutPage>
+            </>}
+            path='about/'>
+          </Route>
+          <Route 
+            element={<>
+            <Schedule></Schedule>
+            </>} 
+            path='schedule/'>
+          </Route>
+          <Route 
+            element={<>
+            <ContactPage></ContactPage>
+            </>} 
+            path='contact/'>
+          </Route>
+        </Routes>
+        <Footer></Footer>
+      </BrowserRouter>
+    </>
   );
 }
 
