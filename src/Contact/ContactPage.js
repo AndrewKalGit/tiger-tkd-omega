@@ -1,11 +1,15 @@
-import React from 'react';
+import React from "react";
+
+import ContactOptions from "./ContactOptions";
+import ContactLocation from "./ContactLocation";
 
 function ContactPage(props) {
-    return (
-        <div>
-            
-        </div>
-    );
+  return (
+    <section>
+      <ContactOptions />
+      <ContactLocation />
+    </section>
+  );
 }
 
 export default ContactPage;
