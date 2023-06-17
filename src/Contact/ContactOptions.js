@@ -1,7 +1,7 @@
 import React from "react";
-import emailImg from "../Images/contact-email.png";
-import phoneImg from "../Images/contact-phone.png";
-import locationImg from "../Images/contact-location.png";
+import emailImg from "../images/contact-email.png";
+import phoneImg from "../images/contact-phone.png";
+import locationImg from "../images/contact-location.png";
 
 const ContactOptions = () => {
   const openMap = (address) => {
@@ -15,7 +15,7 @@ const ContactOptions = () => {
       <div className="flex flex-col gap-16 lg:items-center lg:gap-x-16">
         <div className="mx-auto max-w-lg text-center lg:mx-0 ltr:lg:text-left rtl:lg:text-right">
           <h2 className="text-3xl font-bold sm:text-4xl">
-            GET IN TOUCH WITH US!
+            GET IN TOUCH WITH US
           </h2>
         </div>
 
