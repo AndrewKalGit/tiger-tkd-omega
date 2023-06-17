@@ -1,31 +1,35 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import kickMan from '../Images/TKDMAN1.png';
 
 function ContactUsBanner(props) {
     return (
         <>
             <section
-            class="overflow-hidden bg-gray-50 sm:grid sm:grid-cols-2 sm:items-center"
+            className="vh-100 overflow-hidden bg-gray-50 sm:grid xl:grid-cols-2 sm:items-center"
             >
                 <div class="p-8 md:p-12 lg:px-16 lg:py-24">
                     <div
-                    class="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right"
+                    class="vh-50 mx-auto max-w-2xl text-center ltr:sm:text-left rtl:sm:text-right"
                     >
-                    <h2 class="text-2xl font-bold text-gray-900 md:text-3xl">
+                    <img class="mb-10" src={kickMan} alt="kickingMan"/>
+                    <h2 class="text-3xl xl:text-left font-bold text-gray-900 md:text-5xl">
                         Lorem, ipsum dolor sit amet!
                     </h2>
-
-                    <p class="hidden text-gray-500 md:mt-4 md:block">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas
-                        tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et
-                        fermentum, augue. Aliquet amet volutpat quisque ut interdum tincidunt
-                        duis.
+                    <p class="mt-3 xl:text-left text-gray-700 md:mt-5 md:block">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper.
+                    </p>
+                
+                    <p class="mt-3 xl:text-left text-gray-700 md:mt-5 md:block">                        
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper.
                     </p>
 
-                    <div class="mt-4 md:mt-8">
+                    <div class="mt-20 md:mt-30 flex justify-center">
                         <Link
                         to="/contact"
-                        class="inline-block rounded border-2 border-gray-900 bg-gray-50 px-12 py-3 text-sm font-medium text-gray-900 transition hover:bg-gray-50 focus:outline-none focus:ring focus:ring-blue-400"
+                        class="rounded border-2 border-gray-900 bg-gray-50  px-12 py-3 text-sm font-medium text-gray-900 transition hover:bg-gray-50 focus:outline-none focus:ring focus:ring-blue-400"
                         >
                         Contact Us
                         </Link>
@@ -36,7 +40,7 @@ function ContactUsBanner(props) {
                 <img
                     alt=""
                     src={''}
-                    className="BannerContactIMG bg-gray-400 w-full object-cover h-[calc(100%)] lg:self-end lg:rounded-tl-[150px] lg:rounded-br-[150px]"
+                   className="bg-gray-400 object-cover mb-40 xl:mr-10 vh-75 xl:self-end xl:rounded-tl-[150px] xl:rounded-br-[150px]"
                 />
             </section>   
         </>
