@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import kickMan from "../images/TKDMAN1.png";
+import kickMan from "../Images/TKDMAN1.png";
 
 function ContactUsBanner(props) {
   return (

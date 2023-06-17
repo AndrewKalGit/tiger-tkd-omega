@@ -1,7 +1,7 @@
 import React from "react";
-import emailImg from "../images/contact-email.png";
-import phoneImg from "../images/contact-phone.png";
-import locationImg from "../images/contact-location.png";
+import emailImg from "../Images/contact-email.png";
+import phoneImg from "../Images/contact-phone.png";
+import locationImg from "../Images/contact-location.png";
 
 const ContactOptions = () => {
   const openMap = (address) => {
